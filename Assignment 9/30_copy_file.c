@@ -5,7 +5,7 @@ int main(){
     FILE *f1, *f2;
     char c;
     printf("Please enter your data here:\n");
-    printf("[Press 'ctrl+z' to end input]", EOF);
+    printf("[Press 'ctrl+z' (Windows) or 'ctrl+d' (Linux/Mac) to stop the input]\n");
     f1= fopen("Original.txt", "w");
 
     while((c=getchar()) != EOF){
@@ -33,4 +33,5 @@ int main(){
     }
     fclose(f1);
     fclose(f2);
+    return 0;
 }
